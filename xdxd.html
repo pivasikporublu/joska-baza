@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xdd pomogite mi bolshe ne znaem</title>
+</head>
+<body>
+    <script>
+
+    class category { 
+        constructor(ID,title){
+            this.ID=ID;
+            this.title=title;
+        }
+        }
+
+    class salers { 
+        constructor(ID,title){
+            this.ID=ID;
+            this.title=title;
+        }
+        }
+
+    class brands { 
+        constructor(ID,title){
+            this.ID=ID;
+            this.title=title;
+        }
+
+
+    }
+    
+    class product {
+        constructor(ID,title,category_id,salers_id,brand_id){
+            this.ID=ID;
+            this.title=title;
+            this.category_ID=category_id;
+            this.salers_ID=salers_id;
+            this.brand_ID=brand_id;
+        }
+    }
+    function check_product(id){
+        for(let i=0; i<= prod.length; i++){
+            if(prod[i].ID==id){
+                console.log(prod[i].title)
+                console.log(cat[prod[i].category_ID].title)
+                console.log(sal[prod[i].salers_ID].title)
+                console.log(bran[prod[i].brand_ID].title)
+            }
+    }
+        }
+
+        let prod=[]
+        let cat=[]
+        let sal=[]
+        let bran=[]
+        prod.push(new product(0,"vodka",0,3,4),new product(1,"dog",4,1,0),new product(2,"red_dead_redemption_2",1,2,2),new product(3,"russian_kartoshka",2,4,1),new product(4,"Heaven_Officials_Blessing",3,0,3))
+        
+        cat.push(new category(0,"drinks"),new category(1,"games"),new category(2,"chipsi"),new category(3,"books_for_adults"),new category(4,"pet"))
+
+        sal.push(new salers(0,"Evgeniy"),new salers(1,"Danila_popa"),new salers(2,"Vanin_bayn"),new salers(3,"pivenokporublu"),new salers(4,"Vladislave_barhatniy_tyagi"))
+
+        bran.push(new brands(0,"gucci"),new brands(1,"artem_rasstrel_detei"),new brands(2,"magazinchik_y_chingisa"),new brands(3,"skoda"),new brands(4,"nhtk"))
+
+
+    </script>
+</body>
+</html>
